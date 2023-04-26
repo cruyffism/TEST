@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style28.css">
+  <!-- grid-item에 적용할 수 있는 아이템 속성들 
+  grid-column-start/end : 그리드 아이템 열의 시작과 끝 위치 지정 -->
+  <!-- grid-row-start/end : 그리드 아이템 행의 시작과 끝 위치 지정 --> 
+
+  <style>
+    .container {
+      display: grid;
+      /* grid-column: 2/4;
+      grid-row: 1/3; */
+
+      /* grid-column: span 2;
+      grid-row: span 4; */
+
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(2, 100px);
+      grid-auto-rows: 100px;
+      height: 100vh;
+    }
+
+    .box2 {
+       grid-column-start: 2; 
+       grid-column-end: 4; 
+       grid-row-start: 1;
+       grid-row-end: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item box1">1</div>
+    <div class="item box2">2</div>
+    <div class="item box3">3</div>
+    <div class="item box4">4</div>
+    <div class="item box5">5</div>
+    <div class="item box6">6</div>
+    <div class="item box7">7</div>
+    <div class="item box8">8</div>
+    <div class="item box9">9</div>
+    <div class="item box10">10</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- order : 아이템의 배치를 지정하는 속성 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item{
+      width: 100px;
+    }
+
+    .item {
+      font-size: 3em;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .box1 {
+      background-color: blue;
+      order: 3;
+    }
+
+    .box2 {
+      background-color: green;
+      order: 1;
+    }
+
+    .box3 {
+      background-color: purple;
+      order: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item box1">1</div>
+    <div class="item box2">2</div>
+    <div class="item box3">3</div>
+  </div>
+</body>
+
+</html>

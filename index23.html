@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- flex >> 가로, 세로 레이아웃 다루기 위해 사용. 컨테이너/아이템 속성 각각 존재 -->
+  <!-- 플렉스 레이아웃-->
+  <!-- 메인축, 교차축 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+
+      height: 100vh;
+      
+      /* height: 100vh; */
+      /* flex-direction: column; */
+       
+      /* height: 100vh; */
+      /* flex-wrap: wrap; */
+      /* align-content: space-between; */
+
+      /* height: 100vh; */
+      /* align-items: flex-end; */
+
+      /* flex-direction: row; */
+      /* flex-wrap: wrap-reverse; */
+      /* flex-flow: column wrap; */
+      /* justify-content: center; */
+      /* justify-content: space-around; */
+    }
+
+    .item{
+      flex-basis: 100px;
+      flex-grow: 1;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      font-size: 2em;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+
+</html>
